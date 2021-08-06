@@ -121,13 +121,13 @@ async def network_status_changed_handler(gc: GroupCall, is_connected: bool):
         mp.chat_id = int("-100" + str(gc.full_chat.id))
         await mp.group_call.client.send_message(
             "me",
-            f"{emoji.CHECK_MARK_BUTTON} joined the voice chat"
+            f"{emoji.CHECK_MARK_BUTTON} Menuju VCG Hingga Aku bernynyi"
         )
     else:
         mp.chat_id = None
         await mp.group_call.client.send_message(
             "me",
-            f"{emoji.CROSS_MARK_BUTTON} left the voice chat"
+            f"{emoji.CROSS_MARK_BUTTON} Cape Gaada yang Sawer :v"
         )
 
 
