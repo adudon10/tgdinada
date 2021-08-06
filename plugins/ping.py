@@ -62,10 +62,10 @@ async def ping_pong(_, m: Message):
     """Reply ping with pong and delete both messages"""
     start = time()
     m_reply = await ping.edit("__Aduuuu.__")
-    await pong.edit("__duuuu..__")
-    await pong.edit("__dinnnn...__")
-    await pong.edit("__Adudin....__")
-    await pong.edit("🔥")
+    await ping.edit("__duuuu..__")
+    await ping.edit("__dinnnn...__")
+    await ping.edit("__Adudin....__")
+    await ping.edit("🔥")
     delta_ping = time() - start
     await m_reply.edit_text(
         f"{emoji.ROBOT} ping: `{delta_ping * 10:.3f} ms`"
