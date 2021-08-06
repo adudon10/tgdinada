@@ -47,7 +47,7 @@ from pytgcalls import GroupCallFactory, GroupCallFileAction
 
 DELETE_DELAY = 8
 DURATION_AUTOPLAY_MIN = 510
-DURATION_PLAY_HOUR = 3
+DURATION_PLAY_HOUR = 8
 
 USERBOT_HELP = f"""{emoji.LABEL}  **Common Commands**:
 __available to group members of current voice chat__
