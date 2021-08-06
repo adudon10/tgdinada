@@ -61,7 +61,7 @@ async def _human_time_duration(seconds):
 async def ping_pong(_, m: Message):
     """Reply ping with pong and delete both messages"""
     start = time()
-    m_reply = await pong.edit("__Aduuuu.__")
+    m_reply = await ping.edit("__Aduuuu.__")
     await pong.edit("__duuuu..__")
     await pong.edit("__dinnnn...__")
     await pong.edit("__Adudin....__")
