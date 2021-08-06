@@ -150,7 +150,7 @@ async def join_voice_chat(client, m: Message):
         group_call = mp.group_call
         group_call.client = client
         if group_call.is_connected:
-            text = f"{emoji.ROBOT} already joined a voice chat"
+            text = f"{emoji.ROBOT} Menuju VCG Hingga Aku bernynyi"
         else:
             await group_call.start(channel, join_as=join_as,
                                    invite_hash=invite_hash)
@@ -232,7 +232,7 @@ async def play_track(client, m: Message):
     playlist.append(m_audio)
     if len(playlist) == 1:
         m_status = await m.reply_text(
-            f"{emoji.INBOX_TRAY} downloading and transcoding...",
+            f"{emoji.INBOX_TRAY} Siap Siap Nyanyi...",
             quote=True
         )
         await download_audio(playlist[0])
