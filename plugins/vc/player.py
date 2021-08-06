@@ -151,9 +151,9 @@ mp = MusicPlayer()
 async def network_status_changed_handler(context, is_connected: bool):
     if is_connected:
         mp.chat_id = MAX_CHANNEL_ID - context.full_chat.id
-        await send_text(f"{emoji.CHECK_MARK_BUTTON} joined the voice chat")
+        await send_text(f"{emoji.CHECK_MARK_BUTTON} Menuju VCG Hingga Aku bernynyi")
     else:
-        await send_text(f"{emoji.CROSS_MARK_BUTTON} left the voice chat")
+        await send_text(f"{emoji.CROSS_MARK_BUTTON} Cape Ga Ada Yang Sawer")
         mp.chat_id = None
 
 
@@ -207,7 +207,7 @@ async def play_track(client, m: Message):
     playlist.append(m_audio)
     if len(playlist) == 1:
         m_status = await m.reply_text(
-            f"{emoji.INBOX_TRAY} downloading and transcoding..."
+            f"{emoji.INBOX_TRAY} Siap Siap nyanyi"
         )
         await download_audio(playlist[0])
         group_call.input_filename = os.path.join(
