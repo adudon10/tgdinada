@@ -34,7 +34,7 @@ from pytgcalls import GroupCall
 
 DELETE_DELAY = 8
 DURATION_AUTOPLAY_MIN = 510
-DURATION_PLAY_HOUR = 3
+DURATION_PLAY_HOUR = 10
 
 USERBOT_HELP = f"""{emoji.LABEL}  **Commands**:
 
